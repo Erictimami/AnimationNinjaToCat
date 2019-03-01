@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- add the library for using jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){  //by using 'This' is so efficient. Awesone
+            $('img').click(function(){
+                //var Tag =$(this).attr("data-alt-src");
+                var temp=$(this).attr("src");
+                 $(this).attr("src", $(this).attr("data-alt-src"));
+                 $(this).attr("data-alt-src", temp);
+            });
+            // $('img').click(function(){
+            //     $('img').show();
+            // });
+        });
+    </script>
+    <link rel="stylesheet" href="ninjaToCat.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="group_img">
+            <img src='ninja0.png' data-alt-src='cat0.png' />
+            <img src='ninja1.png' data-alt-src='cat1.png' />
+            <img src='ninja2.png' data-alt-src='cat2.png' />
+            <img src='ninja3.png' data-alt-src='cat3.png' />
+            <img src='ninja4.png' data-alt-src='cat4.png' />
+
+            <!-- <img src='cat0.png' data-alt-src='ninja0.png' />
+            <img src='cat1.png' data-alt-src='ninja1.png' />
+            <img src='cat2.png' data-alt-src='ninja2.png' />
+            <img src='cat3.png' data-alt-src='ninja3.png' />
+            <img src='cat4.png' data-alt-src='ninja4.png' /> -->
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
